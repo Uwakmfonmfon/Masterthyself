@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Know Everything — A Library of What Matters</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Cinzel:wght@400;600;700;900&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- STARFIELD -->
+<div class="starfield" id="starfield"></div>
+
+<!-- AMBIENT ORBS -->
+<div class="orb" style="width:500px;height:500px;top:-100px;left:-100px;background:var(--soul-glow);--d:18s;--tx:30px;--ty:20px;opacity:0.6"></div>
+<div class="orb" style="width:400px;height:400px;bottom:200px;right:-80px;background:var(--stories-glow);--d:22s;--tx:-20px;--ty:-30px;opacity:0.5"></div>
+<div class="orb" style="width:350px;height:350px;top:40%;left:60%;background:var(--history-glow);--d:26s;--tx:15px;--ty:25px;opacity:0.4"></div>
+
+<!-- NAV -->
+<nav class="top-nav">
+  <span class="nav-brand">Know Everything</span>
+  <a href="#journey" class="nav-cta">My Journey ↓</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-over">A Library of What Matters</p>
+  <h1 class="hero-title">
+    <span class="t1">Know</span>
+    <span class="t2">Everything</span>
+  </h1>
+  <p class="hero-sub">Body · Mind · Soul · God · History · Story</p>
+  <p class="hero-desc">Four worlds of knowledge, one place. Understand yourself. Know your Creator. Learn where you came from. Carry the stories that made humanity what it is.</p>
+
+  <!-- COMPASS ROSE -->
+  <div class="compass-wrap">
+    <svg class="compass-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer ring -->
+      <circle cx="200" cy="200" r="190" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="160" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" stroke-dasharray="4 8"/>
+      <circle cx="200" cy="200" r="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="80" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+      <!-- Compass spokes - 8 directions -->
+      <line x1="200" y1="10" x2="200" y2="390" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+      <line x1="10" y1="200" x2="390" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+      <line x1="65" y1="65" x2="335" y2="335" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+      <line x1="335" y1="65" x2="65" y2="335" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+
+      <!-- Cardinal diamond -->
+      <polygon points="200,30 215,185 200,200 185,185" fill="rgba(201,150,58,0.12)" stroke="rgba(201,150,58,0.3)" stroke-width="0.5"/>
+      <polygon points="200,370 185,215 200,200 215,215" fill="rgba(240,234,214,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+      <polygon points="30,200 185,185 200,200 185,215" fill="rgba(155,89,182,0.1)" stroke="rgba(155,89,182,0.25)" stroke-width="0.5"/>
+      <polygon points="370,200 215,215 200,200 215,185" fill="rgba(192,57,43,0.08)" stroke="rgba(192,57,43,0.2)" stroke-width="0.5"/>
+
+      <!-- Degree marks -->
+      <g stroke="rgba(255,255,255,0.12)" stroke-width="1">
+        <line x1="200" y1="10" x2="200" y2="22"/>
+        <line x1="200" y1="378" x2="200" y2="390"/>
+        <line x1="10" y1="200" x2="22" y2="200"/>
+        <line x1="378" y1="200" x2="390" y2="200"/>
+      </g>
+
+      <!-- Small tick marks every 30deg -->
+      <g stroke="rgba(255,255,255,0.06)" stroke-width="0.5">
+        <line x1="295" y1="13.6" x2="289" y2="24"/>
+        <line x1="386.4" y1="105" x2="376" y2="111"/>
+        <line x1="386.4" y1="295" x2="376" y2="289"/>
+        <line x1="295" y1="386.4" x2="289" y2="376"/>
+        <line x1="105" y1="386.4" x2="111" y2="376"/>
+        <line x1="13.6" y1="295" x2="24" y2="289"/>
+        <line x1="13.6" y1="105" x2="24" y2="111"/>
+        <line x1="105" y1="13.6" x2="111" y2="24"/>
+      </g>
+
+      <!-- Center dot -->
+      <circle cx="200" cy="200" r="6" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="2" fill="rgba(255,255,255,0.6)"/>
+    </svg>
+
+    <!-- Portal buttons -->
+    <a href="roadmaps.html" class="portal-btn portal-top">
+      <div class="portal-glyph" style="background:rgba(201,150,58,0.12);color:var(--soul)">🧠</div>
+      <span class="portal-label" style="color:var(--soul)">Know Thyself</span>
+    </a>
+    <a href="god-page.html" class="portal-btn portal-right">
+      <span class="portal-label" style="color:var(--god)">The I AM</span>
+      <div class="portal-glyph" style="background:rgba(232,197,71,0.1);color:var(--god)">✦</div>
+    </a>
+    <a href="stories.html" class="portal-btn portal-bottom">
+      <span class="portal-label" style="color:var(--stories)">The Library</span>
+      <div class="portal-glyph" style="background:rgba(155,89,182,0.12);color:var(--stories)">📖</div>
+    </a>
+    <a href="history.html" class="portal-btn portal-left">
+      <div class="portal-glyph" style="background:rgba(192,57,43,0.12);color:var(--history)">⚔️</div>
+      <span class="portal-label" style="color:var(--history)">History</span>
+    </a>
+
+    <!-- Compass center text -->
+    <div class="compass-center">
+      <span class="compass-center-text">Navigate</span>
+      <span class="compass-center-text" style="margin-top:4px;display:block">Everything</span>
+    </div>
+  </div>
+</section>
+
+<!-- PORTAL CARDS -->
+<section class="portals-section">
+  <p class="portals-label reveal">Choose Your World</p>
+  <div class="portals-grid">
+    <a href="roadmaps.html" class="portal-card reveal" style="color:var(--soul)">
+      <span class="pc-num">01 / 04</span>
+      <span class="pc-icon">🧠</span>
+      <h2 class="pc-title">Know Thyself</h2>
+      <p class="pc-desc">Three roadmaps — Body, Mind, Soul — that take you from basic to profound understanding of who you are. 40 essential books. The questions that shape a life.</p>
+      <div class="pc-topics">
+        <span class="pc-topic">Body</span>
+        <span class="pc-topic">Mind</span>
+        <span class="pc-topic">Soul</span>
+        <span class="pc-topic">40 Books</span>
+        <span class="pc-topic">Roadmaps</span>
+      </div>
+      <span class="pc-enter">Enter this world →</span>
+    </a>
+
+    <a href="god-page.html" class="portal-card reveal" style="color:var(--god)">
+      <span class="pc-num">02 / 04</span>
+      <span class="pc-icon">✦</span>
+      <h2 class="pc-title">The I AM</h2>
+      <p class="pc-desc">Not religion — a Person. Every name of God, His nature and attributes, what He is doing right now, His promises, and a direct line to ask Him anything.</p>
+      <div class="pc-topics">
+        <span class="pc-topic">Names of God</span>
+        <span class="pc-topic">His Nature</span>
+        <span class="pc-topic">Promises</span>
+        <span class="pc-topic">Ask Anything</span>
+      </div>
+      <span class="pc-enter">Enter this world →</span>
+    </a>
+
+    <a href="history.html" class="portal-card reveal" style="color:var(--history)">
+      <span class="pc-num">03 / 04</span>
+      <span class="pc-icon">⚔️</span>
+      <h2 class="pc-title">The Human Story</h2>
+      <p class="pc-desc">Everything that happened from the first fire to the screen in front of you. 7 eras, 50+ events, the people who shaped the world — and why all of it matters to your life today.</p>
+      <div class="pc-topics">
+        <span class="pc-topic">7 Eras</span>
+        <span class="pc-topic">Prehistoric</span>
+        <span class="pc-topic">Ancient</span>
+        <span class="pc-topic">Modern</span>
+        <span class="pc-topic">Ask the Historian</span>
+      </div>
+      <span class="pc-enter">Enter this world →</span>
+    </a>
+
+    <a href="stories.html" class="portal-card reveal" style="color:var(--stories)">
+      <span class="pc-num">04 / 04</span>
+      <span class="pc-icon">📖</span>
+      <h2 class="pc-title">The Library</h2>
+      <p class="pc-desc">Bible stories, historical moments, the lives of extraordinary people, ancient myths — told fully, with depth and meaning. Generate any story. Save your own collection.</p>
+      <div class="pc-topics">
+        <span class="pc-topic">Bible</span>
+        <span class="pc-topic">History</span>
+        <span class="pc-topic">People</span>
+        <span class="pc-topic">Mythology</span>
+        <span class="pc-topic">AI Generator</span>
+      </div>
+      <span class="pc-enter">Enter this world →</span>
+    </a>
+  </div>
+</section>
+
+<!-- DAILY REFLECTION -->
+<section class="daily-section" id="daily">
+  <div class="daily-inner">
+    <div class="daily-header reveal">
+      <p class="daily-eyebrow">✦ Surfaced Each Day</p>
+      <h2 class="daily-title">Today's Reflection</h2>
+      <p class="daily-sub">One verse. One moment from history. One question to sit with.</p>
+    </div>
+    <p class="daily-date reveal" id="dailyDate">—</p>
+
+    <div class="reflection-grid" id="reflectionGrid">
+      <div class="ref-card reveal" id="refVerse" style="border-top:2px solid var(--god)">
+        <p class="ref-card-type" style="color:var(--god)">✦ Scripture</p>
+        <p class="ref-card-content" id="verseText">Loading...</p>
+        <p class="ref-card-source" id="verseSource">—</p>
+      </div>
+      <div class="ref-card reveal" id="refHistory" style="border-top:2px solid var(--history)">
+        <p class="ref-card-type" style="color:var(--history)">⚔️ This Day in History</p>
+        <p class="ref-card-content" id="histText">Loading...</p>
+        <p class="ref-card-source" id="histSource">—</p>
+      </div>
+      <div class="ref-card reveal" id="refQuestion" style="border-top:2px solid var(--soul)">
+        <p class="ref-card-type" style="color:var(--soul)">🌱 Question for the Day</p>
+        <p class="ref-card-question" id="questionText">Loading...</p>
+      </div>
+    </div>
+
+    <div class="daily-refresh reveal">
+      <button class="refresh-btn" onclick="loadReflection()">↻ Refresh Reflection</button>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY TRACKER -->
+<section class="tracker-section" id="journey">
+  <div class="tracker-inner">
+    <div class="tracker-header reveal">
+      <div class="tracker-title-block">
+        <p class="tracker-eyebrow">Your Personal Journey</p>
+        <h2 class="tracker-title">Where Are You?</h2>
+      </div>
+      <p class="tracker-save-hint">Your progress saves automatically in this browser</p>
+    </div>
+
+    <div class="journey-pillars reveal">
+      <!-- Body -->
+      <div class="pillar" style="border-top:2px solid var(--soul)">
+        <div class="pillar-top">
+          <span class="pillar-icon">💪</span>
+          <span class="pillar-pct" style="color:var(--soul)" id="pct-body">0%</span>
+        </div>
+        <p class="pillar-name" style="color:var(--soul)">Body</p>
+        <div class="pillar-bar"><div class="pillar-bar-fill" id="bar-body" style="background:var(--soul);width:0%"></div></div>
+        <div class="pillar-checkboxes" id="checks-body"></div>
+      </div>
+
+      <!-- Mind -->
+      <div class="pillar" style="border-top:2px solid #2E86AB">
+        <div class="pillar-top">
+          <span class="pillar-icon">🧠</span>
+          <span class="pillar-pct" style="color:#2E86AB" id="pct-mind">0%</span>
+        </div>
+        <p class="pillar-name" style="color:#2E86AB">Mind</p>
+        <div class="pillar-bar"><div class="pillar-bar-fill" id="bar-mind" style="background:#2E86AB;width:0%"></div></div>
+        <div class="pillar-checkboxes" id="checks-mind"></div>
+      </div>
+
+      <!-- Soul -->
+      <div class="pillar" style="border-top:2px solid var(--god)">
+        <div class="pillar-top">
+          <span class="pillar-icon">✨</span>
+          <span class="pillar-pct" style="color:var(--god)" id="pct-soul">0%</span>
+        </div>
+        <p class="pillar-name" style="color:var(--god)">Soul</p>
+        <div class="pillar-bar"><div class="pillar-bar-fill" id="bar-soul" style="background:var(--god);width:0%"></div></div>
+        <div class="pillar-checkboxes" id="checks-soul"></div>
+      </div>
+
+      <!-- Worlds -->
+      <div class="pillar" style="border-top:2px solid var(--stories)">
+        <div class="pillar-top">
+          <span class="pillar-icon">🌍</span>
+          <span class="pillar-pct" style="color:var(--stories)" id="pct-worlds">0%</span>
+        </div>
+        <p class="pillar-name" style="color:var(--stories)">Worlds Explored</p>
+        <div class="pillar-bar"><div class="pillar-bar-fill" id="bar-worlds" style="background:var(--stories);width:0%"></div></div>
+        <div class="pillar-checkboxes" id="checks-worlds"></div>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="journey-notes reveal">
+      <p class="notes-label">✍ My Notes & Reflections</p>
+      <textarea class="notes-textarea" id="journeyNotes" rows="4" placeholder="What are you learning? What questions are you sitting with? What has surprised you?..." oninput="autoSave()"></textarea>
+    </div>
+
+    <!-- Books -->
+    <div class="books-row reveal">
+      <div class="books-block">
+        <p class="books-label">📚 Books I'm Reading</p>
+        <div class="books-list" id="readingList"></div>
+        <div class="book-add-row">
+          <input type="text" class="book-input" id="readingInput" placeholder="Add a book title..." onkeydown="if(event.key==='Enter')addBook('reading')"/>
+          <button class="book-add-btn" onclick="addBook('reading')">+ Add</button>
+        </div>
+      </div>
+      <div class="books-block">
+        <p class="books-label">✓ Books I've Finished</p>
+        <div class="books-list" id="finishedList"></div>
+        <div class="book-add-row">
+          <input type="text" class="book-input" id="finishedInput" placeholder="Add a finished book..." onkeydown="if(event.key==='Enter')addBook('finished')"/>
+          <button class="book-add-btn" onclick="addBook('finished')">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tracker-actions reveal">
+      <span class="tracker-saved-msg" id="savedMsg">✓ Saved</span>
+      <div class="action-btns">
+        <button class="action-btn ghost" onclick="resetTracker()">Reset Journey</button>
+        <button class="action-btn primary" onclick="saveTracker()">Save Progress</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-brand">Know Everything</p>
+  <div class="footer-links">
+    <a href="roadmaps.html">Know Thyself</a>
+    <a href="god-page.html">The I AM</a>
+    <a href="history.html">The Human Story</a>
+    <a href="stories.html">The Library</a>
+  </div>
+  <p class="footer-quote">"The beginning of wisdom is this: Get wisdom, and whatever you get, get insight." — Proverbs 4:7</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Know Thyself — Three Roadmaps</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="roadmaps.css">
+</head>
+
+<body>
+
+<div class="hero">
+  <p class="hero-subtitle">A journey of self-discovery</p>
+  <h1 class="hero-title">Know Thyself</h1>
+  <div class="divider"></div>
+  <p class="hero-quote">"The most difficult thing in life is to know yourself." — Thales of Miletus</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn body-tab active" onclick="switchPanel('body')">⬡ The Body</button>
+  <button class="tab-btn mind-tab" onclick="switchPanel('mind')">◈ The Mind</button>
+  <button class="tab-btn soul-tab" onclick="switchPanel('soul')">✦ The Soul</button>
+  <button class="tab-btn books-tab" onclick="switchPanel('books')">📚 Book List</button>
+</div>
+
+<div class="panels">
+
+  <!-- BODY PANEL -->
+  <div class="panel body-panel active" id="panel-body">
+    <div class="panel-header">
+      <span class="panel-icon" style="color: var(--body-color)">⬡</span>
+      <h2 class="panel-title">The Human Body</h2>
+      <p class="panel-desc">Your body is not a vessel — it is the instrument through which all experience arises. To know it is to understand the architecture of your existence.</p>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">I</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase One · Foundation</div>
+          <div class="phase-name">Cells & Organization</div>
+          <p class="phase-desc">Begin at the smallest level. Your body is a civilization of 37 trillion cells, each a living universe. Understanding cell biology unlocks every system above it — how you grow, heal, and age all trace back here.</p>
+          <div class="topics"><span class="topic">Cell Biology</span><span class="topic">DNA & Genetics</span><span class="topic">Tissues & Organs</span><span class="topic">Homeostasis</span><span class="topic">ATP & Energy</span><span class="topic">Cell Division</span></div>
+          <div class="resources"><strong>Books for this phase</strong>The Cell: A Very Short Introduction (Allen) · The Selfish Gene (Dawkins) · Molecular Biology of the Cell (Alberts et al.)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">II</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Two · The Frame</div>
+          <div class="phase-name">Skeletal & Muscular Systems</div>
+          <p class="phase-desc">The body is a machine of levers and tension. Your 206 bones form the scaffold; your 600+ muscles create movement and shape. This phase reveals why posture, exercise, and movement are so deeply tied to how you feel.</p>
+          <div class="topics"><span class="topic">Bone Structure</span><span class="topic">Joints & Cartilage</span><span class="topic">Muscle Fiber Types</span><span class="topic">Fascia</span><span class="topic">Biomechanics</span><span class="topic">Motor Units</span></div>
+          <div class="resources"><strong>Books for this phase</strong>The Body: A Guide for Occupants (Bryson) · Anatomy: A Photographic Atlas (Rohen) · Becoming a Supple Leopard (Starrett)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">III</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Three · The River</div>
+          <div class="phase-name">Cardiovascular & Respiratory Systems</div>
+          <p class="phase-desc">Your heart beats ~100,000 times per day. Your lungs perform ~20,000 breaths. Together they deliver oxygen — the currency of life — to every cell. Understanding circulation gives insight into energy, stress, and longevity.</p>
+          <div class="topics"><span class="topic">Heart Anatomy</span><span class="topic">Blood Composition</span><span class="topic">Circulation Loops</span><span class="topic">Lung Mechanics</span><span class="topic">Gas Exchange</span><span class="topic">VO2 Max</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Breath (Nestor) · The Oxygen Advantage (McKeown) · Endure (Hutchinson)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">IV</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Four · The Messenger</div>
+          <div class="phase-name">Nervous & Endocrine Systems</div>
+          <p class="phase-desc">The nervous system is your body's internet — 86 billion neurons firing signals faster than thought. The endocrine system is its postal service — hormones like cortisol, insulin, and testosterone shaping how you feel, focus, and function daily.</p>
+          <div class="topics"><span class="topic">Neurons & Synapses</span><span class="topic">Autonomic NS</span><span class="topic">Fight or Flight</span><span class="topic">Major Hormones</span><span class="topic">Cortisol Cycle</span><span class="topic">Circadian Rhythm</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Behave (Sapolsky) · Why We Sleep (Walker) · The Brain That Changes Itself (Doidge)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">V</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Five · The Alchemist</div>
+          <div class="phase-name">Digestive System & Gut-Brain Axis</div>
+          <p class="phase-desc">You are, in part, what you eat — but more precisely, what you absorb. The gut houses its own nervous system and ~70% of your immune cells. The gut-brain axis means your digestion directly shapes your mood, cognition, and mental health.</p>
+          <div class="topics"><span class="topic">Digestion Stages</span><span class="topic">Microbiome</span><span class="topic">Gut-Brain Axis</span><span class="topic">Nutrient Absorption</span><span class="topic">Liver Function</span><span class="topic">Inflammation</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Gut (Enders) · The Good Gut (Sonnenburg) · Brain Maker (Perlmutter)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">VI</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Six · The Guardian</div>
+          <div class="phase-name">Immune System & Aging</div>
+          <p class="phase-desc">Your immune system is a standing army — and understanding it means understanding how disease, stress, inflammation, and even cancer interact with your body. Aging is its own science: the study of how and why everything above gradually changes.</p>
+          <div class="topics"><span class="topic">Innate Immunity</span><span class="topic">Adaptive Immunity</span><span class="topic">Inflammation</span><span class="topic">Autoimmunity</span><span class="topic">Telomeres</span><span class="topic">Senescence</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Lifespan (Sinclair) · Outlive (Attia) · The Telomere Effect (Blackburn & Epel)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIND PANEL -->
+  <div class="panel mind-panel" id="panel-mind">
+    <div class="panel-header">
+      <span class="panel-icon" style="color: var(--mind-color)">◈</span>
+      <h2 class="panel-title">The Human Mind</h2>
+      <p class="panel-desc">The mind is the stage on which your entire life plays out. To study it is to hold the director's lens — understanding perception, thought, emotion, memory, and consciousness.</p>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">I</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase One · Architecture</div>
+          <div class="phase-name">Brain Structure & Neuroscience</div>
+          <p class="phase-desc">Before studying behavior, understand the hardware. The brain is divided into ancient and modern regions — the reptilian brainstem for survival, the limbic system for emotion, and the neocortex for reason. These layers are in constant conversation, and often in conflict.</p>
+          <div class="topics"><span class="topic">Brain Regions</span><span class="topic">Prefrontal Cortex</span><span class="topic">Limbic System</span><span class="topic">Neuroplasticity</span><span class="topic">Neurotransmitters</span><span class="topic">Default Mode Network</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Incognito (Eagleman) · The Tell-Tale Brain (Ramachandran) · Phantoms in the Brain (Ramachandran)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">II</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Two · The Lens</div>
+          <div class="phase-name">Perception & Consciousness</div>
+          <p class="phase-desc">You do not see reality — you see a story your brain constructs. Perception is active, not passive. Consciousness — that strange feeling of being "someone in here" — remains one of science's deepest mysteries. This phase will permanently change how you experience experience.</p>
+          <div class="topics"><span class="topic">Sensory Processing</span><span class="topic">Predictive Coding</span><span class="topic">The Hard Problem</span><span class="topic">Attention</span><span class="topic">Altered States</span><span class="topic">Dreams</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Consciousness Explained (Dennett) · The Case Against Reality (Hoffman) · Other Minds (Godfrey-Smith)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">III</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Three · The Archive</div>
+          <div class="phase-name">Memory & Learning</div>
+          <p class="phase-desc">Memory is not a recording — it is a reconstruction. Every time you remember something, you rewrite it slightly. Understanding how memories form, decay, and become distorted changes how you relate to your own past, and makes you a far more effective learner.</p>
+          <div class="topics"><span class="topic">Types of Memory</span><span class="topic">Long-term Potentiation</span><span class="topic">Sleep & Memory</span><span class="topic">Spaced Repetition</span><span class="topic">Forgetting Curve</span><span class="topic">Trauma Memory</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Moonwalking with Einstein (Foer) · Make It Stick (Brown et al.) · The Memory Illusion (Shaw)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">IV</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Four · The Current</div>
+          <div class="phase-name">Emotions & Affect</div>
+          <p class="phase-desc">Emotions are not interruptions of thought — they are information. Modern neuroscience reveals emotions are constructed, not triggered, meaning you have more agency over your emotional life than you think. This phase is where science meets profound personal liberation.</p>
+          <div class="topics"><span class="topic">Constructed Emotion Theory</span><span class="topic">Affect Labeling</span><span class="topic">Emotional Regulation</span><span class="topic">Somatic Markers</span><span class="topic">Interoception</span><span class="topic">Emotional Granularity</span></div>
+          <div class="resources"><strong>Books for this phase</strong>How Emotions Are Made (Barrett) · The Body Keeps the Score (van der Kolk) · Atlas of the Heart (Brown)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">V</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Five · The Blind Spot</div>
+          <div class="phase-name">Cognitive Biases & Thinking</div>
+          <p class="phase-desc">Your mind runs on heuristics — mental shortcuts that work 80% of the time and silently mislead you the rest. Dual-process theory (System 1 and System 2), cognitive biases, and logical fallacies reveal the systematic ways your mind deceives you. Self-knowledge requires facing these honestly.</p>
+          <div class="topics"><span class="topic">System 1 & 2</span><span class="topic">Confirmation Bias</span><span class="topic">Dunning-Kruger</span><span class="topic">Heuristics</span><span class="topic">Logical Fallacies</span><span class="topic">Metacognition</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Thinking, Fast and Slow (Kahneman) · Predictably Irrational (Ariely) · The Intelligence Trap (Robson)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">VI</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Six · The Self</div>
+          <div class="phase-name">Personality, Identity & Psychology</div>
+          <p class="phase-desc">Who are you, really? Psychology offers frameworks — trait models (Big Five), attachment theory, Jungian archetypes — that map the terrain of personhood. The deeper question is whether the "self" is a fixed thing or an ongoing story you tell yourself. The answer matters enormously.</p>
+          <div class="topics"><span class="topic">Big Five Personality</span><span class="topic">Attachment Theory</span><span class="topic">Ego Development</span><span class="topic">Shadow Self (Jung)</span><span class="topic">Identity Formation</span><span class="topic">Self-concept</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Attached (Levine & Heller) · Maps of Meaning (Peterson) · The Gifts of Imperfection (Brown)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOUL PANEL -->
+  <div class="panel soul-panel" id="panel-soul">
+    <div class="panel-header">
+      <span class="panel-icon" style="color: var(--soul-color)">✦</span>
+      <h2 class="panel-title">The Human Soul</h2>
+      <p class="panel-desc">The soul is the dimension that neither biology nor psychology fully addresses — the domain of meaning, purpose, ethics, the sacred, and the question of what, if anything, persists beyond. Approach this as inquiry, not doctrine.</p>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">I</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase One · The Question</div>
+          <div class="phase-name">Philosophy of the Self</div>
+          <p class="phase-desc">Philosophy asks what no other field dares to fully commit to: What is a self? What is the nature of consciousness? Do you have free will? These questions are not just academic — how you answer them shapes everything about how you live. Start here to build the foundation for all that follows.</p>
+          <div class="topics"><span class="topic">Descartes' Cogito</span><span class="topic">Hume's Bundle Theory</span><span class="topic">Free Will Debate</span><span class="topic">Personal Identity</span><span class="topic">Existentialism</span><span class="topic">Buddhist No-Self</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Sophie's World (Gaarder) · The Problems of Philosophy (Russell) · Free Will (Harris)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">II</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Two · The Compass</div>
+          <div class="phase-name">Ethics & Moral Philosophy</div>
+          <p class="phase-desc">To know yourself is to know what you value — and why. Ethics is not a list of rules but a living conversation about how to act well in the world. Virtue ethics, consequentialism, deontology, and care ethics each light the same territory from different angles. Understanding them reveals the implicit moral framework already operating inside you.</p>
+          <div class="topics"><span class="topic">Virtue Ethics</span><span class="topic">Consequentialism</span><span class="topic">Kantian Ethics</span><span class="topic">Moral Intuitions</span><span class="topic">Care Ethics</span><span class="topic">Moral Psychology</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Justice (Sandel) · Nicomachean Ethics (Aristotle) · The Righteous Mind (Haidt)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">III</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Three · The Map</div>
+          <div class="phase-name">Mythology, Religion & Comparative Spirituality</div>
+          <p class="phase-desc">Every civilization in human history has tried to answer the soul's deepest questions through story, ritual, and cosmology. Rather than treating any one tradition as exclusive truth, study them comparatively — and you discover a shared grammar of the human spirit underneath.</p>
+          <div class="topics"><span class="topic">The Hero's Journey</span><span class="topic">Comparative Religion</span><span class="topic">Jungian Archetypes</span><span class="topic">Mystical Traditions</span><span class="topic">Rites of Passage</span><span class="topic">Sacred vs. Profane</span></div>
+          <div class="resources"><strong>Books for this phase</strong>The Hero with a Thousand Faces (Campbell) · The Sacred and the Profane (Eliade) · The Perennial Philosophy (Huxley)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">IV</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Four · The Practice</div>
+          <div class="phase-name">Contemplative Traditions & Inner Work</div>
+          <p class="phase-desc">Knowledge of the soul is not only intellectual — it must be lived. Every major wisdom tradition offers a practice: meditation, prayer, shadow work, Stoic journaling. Choose a practice and commit to it. This is where study becomes transformation.</p>
+          <div class="topics"><span class="topic">Mindfulness Meditation</span><span class="topic">Contemplative Prayer</span><span class="topic">Shadow Work</span><span class="topic">Stoic Practice</span><span class="topic">Journaling Traditions</span><span class="topic">Silence & Solitude</span></div>
+          <div class="resources"><strong>Books for this phase</strong>The Miracle of Mindfulness (Thich Nhat Hanh) · Meditations (Marcus Aurelius) · Anam Cara (O'Donohue)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">V</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Five · The Wound</div>
+          <div class="phase-name">Suffering, Shadow & Transformation</div>
+          <p class="phase-desc">The soul is forged in difficulty. Every tradition recognizes that transformation requires passing through darkness — whether called the Dark Night of the Soul, the crucible, or the descent into the underworld. Studying how humans have understood suffering — and grown from it — is perhaps the most practically useful soul-knowledge of all.</p>
+          <div class="topics"><span class="topic">Logotherapy (Frankl)</span><span class="topic">Dark Night of the Soul</span><span class="topic">Post-Traumatic Growth</span><span class="topic">Grief & Loss</span><span class="topic">The Shadow (Jung)</span><span class="topic">Forgiveness</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Man's Search for Meaning (Frankl) · Care of the Soul (Moore) · When Things Fall Apart (Chödrön)</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-num-col"><div class="phase-num">VI</div><div class="phase-line"></div></div>
+        <div class="phase-content">
+          <div class="phase-label">Phase Six · The Horizon</div>
+          <div class="phase-name">Meaning, Purpose & the Good Life</div>
+          <p class="phase-desc">Ultimately, the study of the soul converges on a single question: How should I live? Eudaimonia, ikigai, the Stoic good life, the Buddhist path to liberation — each culture has answered this differently, but with striking resonance. This final phase is not a conclusion but an ongoing conversation with your own life.</p>
+          <div class="topics"><span class="topic">Eudaimonia</span><span class="topic">Ikigai</span><span class="topic">Flow States</span><span class="topic">Values Clarification</span><span class="topic">Legacy & Mortality</span><span class="topic">Love as Spiritual Path</span></div>
+          <div class="resources"><strong>Books for this phase</strong>Flow (Csikszentmihalyi) · The Book of Joy (Dalai Lama & Tutu) · Staring at the Sun (Yalom)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKS PANEL -->
+  <div class="panel books-panel" id="panel-books">
+    <div class="panel-header">
+      <span class="panel-icon" style="color: var(--books-color)">📚</span>
+      <h2 class="panel-title">The Complete Book List</h2>
+      <p class="panel-desc">Every book across all three roadmaps, with descriptions and difficulty levels. Read them in order, or follow your curiosity. Each one is a doorway.</p>
+    </div>
+
+    <!-- BODY BOOKS -->
+    <div class="book-section body-section">
+      <div class="book-section-header">
+        <span class="book-section-icon" style="color: var(--body-color)">⬡</span>
+        <div>
+          <div class="book-section-title">The Body</div>
+          <div class="book-section-subtitle">Biology · Anatomy · Physiology · Health · Longevity</div>
+        </div>
+      </div>
+      <div class="book-grid">
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Cells</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Selfish Gene</div>
+          <div class="book-author">Richard Dawkins · 1976</div>
+          <div class="book-desc">A landmark introduction to how genes — not organisms — are the true unit of life. Explains evolution, DNA, and the biological logic underlying your existence. Accessible and paradigm-shifting. Start here to understand what you fundamentally are.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Cells</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Cell: A Very Short Introduction</div>
+          <div class="book-author">Terence Allen & Graham Cowling · 2011</div>
+          <div class="book-desc">A compact, clear tour of cellular biology — how cells are built, how they function, how they communicate, and how they divide. The perfect bridge before diving into body systems. Part of Oxford's excellent introductory series.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Cells</div>
+          <div class="difficulty-badge">Advanced</div>
+          <div class="book-title">Molecular Biology of the Cell</div>
+          <div class="book-author">Alberts, Johnson, Lewis et al. · 2022</div>
+          <div class="book-desc">The definitive university-level cell biology textbook. Comprehensive, richly illustrated, and authoritative. Use it as a reference — dip into chapters relevant to whichever system you're studying. Not meant to be read cover to cover.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Structure</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Body: A Guide for Occupants</div>
+          <div class="book-author">Bill Bryson · 2019</div>
+          <div class="book-desc">A warm, witty, endlessly fascinating tour of the human body from head to toe. Perfect for building a broad mental map before going deeper. Bryson's gift is making biology feel like the most wondrous subject imaginable — because it is.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Structure</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Anatomy: A Photographic Atlas</div>
+          <div class="book-author">Johannes Rohen et al. · 2022</div>
+          <div class="book-desc">Real cadaver photography showing the body's actual structures. What textbook diagrams idealize, this shows as it truly is. An invaluable visual companion that makes anatomy feel real rather than abstract.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Structure</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Becoming a Supple Leopard</div>
+          <div class="book-author">Kelly Starrett · 2013</div>
+          <div class="book-desc">Applied anatomy through movement — how muscles, joints, and fascia function in motion, and how to restore them when they don't. Essential if you want to understand your body through physical experience, not just theory.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Circulation</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Breath: The New Science of a Lost Art</div>
+          <div class="book-author">James Nestor · 2020</div>
+          <div class="book-desc">A revelatory look at how the way you breathe shapes your health, cognition, sleep, and even your face. Combines science, history, and personal experiment. One of the most surprising health books of the past decade.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Circulation</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Oxygen Advantage</div>
+          <div class="book-author">Patrick McKeown · 2015</div>
+          <div class="book-desc">Practical breathing science — how nasal breathing, CO2 tolerance, and breath-hold training transform cardiovascular performance and nervous system regulation. Gives you tools to work with your body daily.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Circulation</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance</div>
+          <div class="book-author">Alex Hutchinson · 2018</div>
+          <div class="book-desc">What actually limits human physical performance? The answer is far more psychological and neurological than physiological. A deep dive into the science of pushing limits that reveals how brain and body co-create capacity.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Nervous System</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Why We Sleep</div>
+          <div class="book-author">Matthew Walker · 2017</div>
+          <div class="book-desc">Sleep is the foundation of every brain and body function. Walker reveals what actually happens during sleep — memory consolidation, emotional regulation, immune maintenance — and why getting less is never worth it. Essential reading.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Nervous System</div>
+          <div class="difficulty-badge">Advanced</div>
+          <div class="book-title">Behave: The Biology of Humans at Our Best and Worst</div>
+          <div class="book-author">Robert Sapolsky · 2017</div>
+          <div class="book-desc">A masterpiece on the biological roots of human behavior — hormones, evolution, brain regions, environment. Covers everything from testosterone to tribalism. One of the most important books on this entire list. Read it slowly.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Nervous System</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Brain That Changes Itself</div>
+          <div class="book-author">Norman Doidge · 2007</div>
+          <div class="book-desc">Stories of patients and scientists that reveal neuroplasticity — the brain's astonishing ability to rewire itself. Gives profound hope and a scientific foundation for believing real personal change is possible at any age.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Gut</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Gut: The Inside Story of Our Body's Most Underrated Organ</div>
+          <div class="book-author">Giulia Enders · 2014</div>
+          <div class="book-desc">Delightfully written and surprisingly funny — a complete tour of digestion, the microbiome, and the gut-brain connection. The best starting point for understanding your inner ecosystem. Charming illustrations help.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Gut</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Good Gut</div>
+          <div class="book-author">Justin & Erica Sonnenburg · 2015</div>
+          <div class="book-desc">Stanford microbiome scientists explain how your trillions of gut bacteria shape immunity, mood, and metabolism — and how diet determines which bacteria thrive. More rigorous than Enders, but still accessible.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Gut</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Brain Maker</div>
+          <div class="book-author">David Perlmutter · 2015</div>
+          <div class="book-desc">Explores the gut-brain connection in clinical terms — how gut health affects neurological conditions, mood disorders, and cognitive function. More prescriptive than others in this phase, offering direct dietary guidance.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Aging</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Lifespan: Why We Age and Why We Don't Have To</div>
+          <div class="book-author">David Sinclair · 2019</div>
+          <div class="book-desc">A Harvard geneticist argues aging is a disease — and explains the cutting-edge science of sirtuins, NAD+, and epigenetic reprogramming. Provocative and vision-expanding, even where it's contested by other scientists.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Aging</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Outlive: The Science and Art of Longevity</div>
+          <div class="book-author">Peter Attia · 2023</div>
+          <div class="book-desc">A physician's comprehensive framework for living longer and better — covering exercise, nutrition, sleep, and emotional health as the four pillars. The most practically actionable book on this list. A modern health bible.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Aging</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Telomere Effect</div>
+          <div class="book-author">Elizabeth Blackburn & Elissa Epel · 2017</div>
+          <div class="book-desc">A Nobel laureate explains how stress, lifestyle, and mindset affect your telomeres — the biological clocks of your cells. Bridges hard science with actionable insights on cellular aging and what you can do about it now.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MIND BOOKS -->
+    <div class="book-section mind-section">
+      <div class="book-section-header">
+        <span class="book-section-icon" style="color: var(--mind-color)">◈</span>
+        <div>
+          <div class="book-section-title">The Mind</div>
+          <div class="book-section-subtitle">Neuroscience · Psychology · Cognition · Emotion · Identity</div>
+        </div>
+      </div>
+      <div class="book-grid">
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Brain</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Incognito: The Secret Lives of the Brain</div>
+          <div class="book-author">David Eagleman · 2011</div>
+          <div class="book-desc">A neuroscientist reveals that 95% of brain activity is unconscious. Your conscious "you" is just the tip of an enormous iceberg. Beautifully written and profoundly humbling. The best single entry point to neuroscience available.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Brain</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Tell-Tale Brain</div>
+          <div class="book-author">V.S. Ramachandran · 2011</div>
+          <div class="book-desc">Through bizarre neurological cases — phantom limbs, Capgras syndrome, synesthesia — Ramachandran illuminates how the brain constructs reality and selfhood. Endlessly fascinating and written with infectious wonder.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Brain</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Phantoms in the Brain</div>
+          <div class="book-author">V.S. Ramachandran · 1998</div>
+          <div class="book-desc">Ramachandran's first and most narrative-driven book — structured around patients with strange neurological conditions that illuminate the brain's deeper workings. Pairs beautifully with The Tell-Tale Brain.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Consciousness</div>
+          <div class="difficulty-badge">Advanced</div>
+          <div class="book-title">Consciousness Explained</div>
+          <div class="book-author">Daniel Dennett · 1991</div>
+          <div class="book-desc">A bold philosophical attempt to demystify consciousness — arguing it is a product of brain processes, not magic. Challenging but rewarding. Whether you agree or not, engaging with it sharpens your thinking on the hardest question in science.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Consciousness</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Case Against Reality</div>
+          <div class="book-author">Donald Hoffman · 2019</div>
+          <div class="book-desc">A cognitive scientist argues that perception doesn't show us reality — it shows us a "user interface" shaped by evolution. Deeply strange and fascinating. Permanently changes how you understand your own experience of the world.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Consciousness</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness</div>
+          <div class="book-author">Peter Godfrey-Smith · 2016</div>
+          <div class="book-desc">A philosopher-diver explores consciousness by studying octopuses — whose minds evolved completely independently from ours. Illuminates what consciousness might be by showing how radically different it can look from the outside.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Memory</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Moonwalking with Einstein</div>
+          <div class="book-author">Joshua Foer · 2011</div>
+          <div class="book-desc">A journalist trains to become US Memory Champion and learns the ancient art of memory palaces along the way. Entertaining, practical, and deeply illuminating on how memory actually works and how much capacity you truly have.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Memory</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Make It Stick: The Science of Successful Learning</div>
+          <div class="book-author">Brown, Roediger & McDaniel · 2014</div>
+          <div class="book-desc">Cognitive scientists reveal that most of what we believe about learning is wrong. Spaced repetition, retrieval practice, and interleaving beat rereading every time. Immediately applicable to your entire self-study journey.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Memory</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Memory Illusion</div>
+          <div class="book-author">Julia Shaw · 2016</div>
+          <div class="book-desc">A memory scientist explains how memories are reconstructed — not replayed — and how false memories can be implanted. Shatters the naive notion that your past is a reliable record. Deeply unsettling and important.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Emotions</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">How Emotions Are Made</div>
+          <div class="book-author">Lisa Feldman Barrett · 2017</div>
+          <div class="book-desc">The most important book on emotion in decades. Barrett proves emotions are not universal hard-wired reactions but are actively constructed by the brain — and that this gives you far more agency over your emotional life than you thought.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Emotions</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Body Keeps the Score</div>
+          <div class="book-author">Bessel van der Kolk · 2014</div>
+          <div class="book-desc">A landmark exploration of trauma — how overwhelming experiences reshape brain, mind, and body. Even for those without clinical trauma, this book transforms your understanding of the mind-body connection. One of the most widely read psychology books of our era.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Emotions</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Atlas of the Heart</div>
+          <div class="book-author">Brené Brown · 2021</div>
+          <div class="book-desc">Maps 87 distinct human emotions and experiences — many of which we feel but lack words for. Emotional granularity (the ability to name emotions precisely) is one of the most powerful emotional regulation tools available. This book builds it.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Biases</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Thinking, Fast and Slow</div>
+          <div class="book-author">Daniel Kahneman · 2011</div>
+          <div class="book-desc">The definitive book on cognitive biases and dual-process thinking. A Nobel laureate maps the systematic errors that govern human judgment. Required reading for anyone who wants to understand — and partially escape — the limits of their own mind.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Biases</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Predictably Irrational</div>
+          <div class="book-author">Dan Ariely · 2008</div>
+          <div class="book-desc">Through clever behavioral experiments, Ariely shows how irrationally humans behave — in ways that are patterned and predictable. Funny, surprising, and immediately useful for understanding the hidden logic behind your own choices.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Biases</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Intelligence Trap</div>
+          <div class="book-author">David Robson · 2019</div>
+          <div class="book-desc">Why do smart people make stupid decisions? Robson explores the paradox of intelligence — how cognitive ability can actually reinforce bias — and what cognitive scientists know about wisdom, curiosity, and intellectual humility.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Identity</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Attached: The New Science of Adult Attachment</div>
+          <div class="book-author">Amir Levine & Rachel Heller · 2010</div>
+          <div class="book-desc">How your early attachment style — anxious, avoidant, or secure — shapes every relationship you have as an adult. One of the most practically revelatory psychology books available. Most people recognize themselves on the first few pages.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Identity</div>
+          <div class="difficulty-badge">Advanced</div>
+          <div class="book-title">Maps of Meaning: The Architecture of Belief</div>
+          <div class="book-author">Jordan Peterson · 1999</div>
+          <div class="book-desc">A dense synthesis of Jungian psychology, mythology, neuroscience, and religion. Explores how humans create meaning through narrative and why order, chaos, and the hero archetype are the fundamental categories of human experience. Demanding but rewarding.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Identity</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Gifts of Imperfection</div>
+          <div class="book-author">Brené Brown · 2010</div>
+          <div class="book-desc">A research-grounded exploration of worthiness, shame, vulnerability, and authenticity. Brown's work on shame resilience is among the most practically useful psychological research for building a healthy sense of self.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SOUL BOOKS -->
+    <div class="book-section soul-section">
+      <div class="book-section-header">
+        <span class="book-section-icon" style="color: var(--soul-color)">✦</span>
+        <div>
+          <div class="book-section-title">The Soul</div>
+          <div class="book-section-subtitle">Philosophy · Ethics · Mythology · Spirituality · Meaning · Death</div>
+        </div>
+      </div>
+      <div class="book-grid">
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Philosophy</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Sophie's World</div>
+          <div class="book-author">Jostein Gaarder · 1991</div>
+          <div class="book-desc">The entire history of Western philosophy told as a coming-of-age novel. The most painless and engaging entry point to philosophy ever written. Covers Socrates, Plato, Descartes, Hume, Kant, and beyond — in a story you'll actually finish.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Philosophy</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Problems of Philosophy</div>
+          <div class="book-author">Bertrand Russell · 1912</div>
+          <div class="book-desc">A short masterpiece that introduces the core questions of philosophy — knowledge, perception, matter, truth — with crystalline clarity. Still one of the best introductions to philosophical thinking a century after it was written.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase I · Philosophy</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Free Will</div>
+          <div class="book-author">Sam Harris · 2012</div>
+          <div class="book-desc">A short, sharp argument that free will is an illusion — and that recognizing this is actually liberating. Whether you agree or not, it forces rigorous thinking about agency, responsibility, and the nature of selfhood. Read in an afternoon.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Ethics</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Justice: What's the Right Thing to Do?</div>
+          <div class="book-author">Michael Sandel · 2009</div>
+          <div class="book-desc">Harvard's most popular course turned into a book. Walks through the major ethical frameworks — Bentham, Kant, Aristotle, Rawls — through real-world dilemmas. The most accessible ethics book ever written. Start here before Aristotle.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Ethics</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Nicomachean Ethics</div>
+          <div class="book-author">Aristotle · ~350 BCE</div>
+          <div class="book-desc">The foundational text on virtue ethics and the good life. Aristotle's concept of eudaimonia — human flourishing through excellence of character — remains one of the most compelling answers to "how should I live?" Use a modern translation (Ross or Irwin).</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase II · Ethics</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Righteous Mind</div>
+          <div class="book-author">Jonathan Haidt · 2012</div>
+          <div class="book-desc">Why do good people disagree so fiercely about morality? Haidt reveals that moral reasoning is mostly post-hoc rationalization of gut intuitions — and maps the six moral foundations that different people weight differently. Politically clarifying.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Mythology</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Hero with a Thousand Faces</div>
+          <div class="book-author">Joseph Campbell · 1949</div>
+          <div class="book-desc">Campbell's magnum opus — the monomyth, the universal story pattern found in every culture's mythology. Shows that all human stories are essentially one story, and that story is also the map of your own inner life. Slow, dense, revelatory.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Mythology</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">The Sacred and the Profane</div>
+          <div class="book-author">Mircea Eliade · 1957</div>
+          <div class="book-desc">A scholar of religion examines what "the sacred" means across all cultures — sacred time, sacred space, sacred nature. Reveals the universal structure of religious experience beneath all its diverse forms. Short and profound.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase III · Mythology</div>
+          <div class="difficulty-badge">Advanced</div>
+          <div class="book-title">The Perennial Philosophy</div>
+          <div class="book-author">Aldous Huxley · 1945</div>
+          <div class="book-desc">A synthesis of mystical wisdom from Christianity, Hinduism, Buddhism, Sufism, and Taoism — revealing the common metaphysical core beneath all great spiritual traditions. Dense and demanding, but a rare book that genuinely expands your worldview.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Practice</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Miracle of Mindfulness</div>
+          <div class="book-author">Thich Nhat Hanh · 1975</div>
+          <div class="book-desc">A gentle, luminous introduction to mindfulness meditation from one of the great Buddhist teachers of the 20th century. Written as a letter to a friend, it makes the practice immediately accessible. Begin here before any other meditation book.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Practice</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Meditations</div>
+          <div class="book-author">Marcus Aurelius · ~170 CE</div>
+          <div class="book-desc">Private journal entries of a Roman Emperor who practiced Stoicism daily — never intended for publication. The most honest document of a person genuinely trying to live philosophically. Read one or two entries at a time, slowly. Use Gregory Hays' translation.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase IV · Practice</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Anam Cara: A Book of Celtic Wisdom</div>
+          <div class="book-author">John O'Donohue · 1997</div>
+          <div class="book-desc">A philosopher-poet explores Celtic spirituality — solitude, friendship, work, aging, death — with prose so beautiful it reads like poetry. One of the rare books that nourishes the soul directly rather than just describing it.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Suffering</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">Man's Search for Meaning</div>
+          <div class="book-author">Viktor Frankl · 1946</div>
+          <div class="book-desc">A psychiatrist's memoir of surviving the Nazi death camps — and his discovery that meaning, not pleasure, is the primary human drive. One of the most important and moving books ever written. Every person should read this at least once. Essential.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Suffering</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">When Things Fall Apart</div>
+          <div class="book-author">Pema Chödrön · 1997</div>
+          <div class="book-desc">A Buddhist nun offers radical wisdom on how to meet difficulty without running away — leaning into fear, uncertainty, and pain as the path itself. Quietly life-changing for anyone going through hardship or seeking to understand suffering.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase V · Suffering</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Care of the Soul</div>
+          <div class="book-author">Thomas Moore · 1992</div>
+          <div class="book-desc">A former monk and psychotherapist argues the modern world suffers from "loss of soul" — and that depth, myth, ritual, beauty, and even depression have their place in a full life. A beautiful, unusual book that reenchants everyday existence.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Meaning</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Flow: The Psychology of Optimal Experience</div>
+          <div class="book-author">Mihaly Csikszentmihalyi · 1990</div>
+          <div class="book-desc">The psychologist who named "flow" explains when and why humans feel most alive — complete absorption in a challenging task. The scientific foundation for understanding peak experience, intrinsic motivation, and a meaningful life.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Meaning</div>
+          <div class="difficulty-badge">Beginner</div>
+          <div class="book-title">The Book of Joy</div>
+          <div class="book-author">Dalai Lama & Desmond Tutu · 2016</div>
+          <div class="book-desc">A week-long conversation between two of the world's great spiritual leaders on the nature of joy in the face of suffering. Warmhearted, wise, and surprisingly practical. One of the most joyful books ever written — and earned by both men's lives.</div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-phase-tag">Phase VI · Meaning</div>
+          <div class="difficulty-badge">Intermediate</div>
+          <div class="book-title">Staring at the Sun: Overcoming the Terror of Death</div>
+          <div class="book-author">Irvin Yalom · 2008</div>
+          <div class="book-desc">An existential psychiatrist explores death anxiety — and how confronting mortality, rather than avoiding it, is the gateway to a fully lived life. Yalom argues that "awakening experiences" — reminders of death — can paradoxically liberate us. Deeply important.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="total-count">
+      A complete library of <span>40 books</span> across body, mind & soul — a lifetime of illumination, organized into 18 phases
+    </div>
+
+  </div>
+</div>
+
+<div style="background: linear-gradient(135deg, #1A0F00, #3D2B00); padding: 60px 20px; text-align: center; position: relative; z-index:1;">
+  <p style="font-family:'Josefin Sans',sans-serif; font-weight:200; letter-spacing:0.5em; font-size:0.65rem; text-transform:uppercase; color:rgba(245,200,66,0.5); margin-bottom:20px;">Continue the Journey</p>
+  <h3 style="font-family:'Cinzel Decorative',serif; font-size:clamp(1.2rem,3vw,1.8rem); font-weight:400; color:#F5C842; margin-bottom:12px; text-shadow: 0 0 30px rgba(245,200,66,0.4);">✦ The I AM</h3>
+  <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1rem; color:rgba(255,248,236,0.55); max-width:500px; margin:0 auto 28px; line-height:1.8;">All three roadmaps point toward a single question. This page is the answer — or rather, the Person who is the answer.</p>
+  <a href="god-page.html" style="display:inline-block; background:linear-gradient(135deg,#C8960A,#F5C842); color:#1A0F00; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(200,150,10,0.4); margin:8px;">Know Your Creator →</a>
+  <a href="history.html" style="display:inline-block; background:linear-gradient(135deg,#7A2A1A,#C0392B); color:#F4EFE4; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(192,58,43,0.4); margin:8px;">The Human Story →</a>
+  <a href="stories.html" style="display:inline-block; background:linear-gradient(135deg,#4A1A5E,#9B59B6); color:#F5EFE0; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(155,89,182,0.4); margin:8px;">The Library →</a>
+  <a href="daily.html" style="display:inline-block; background:linear-gradient(135deg,#1A3A2A,#2E7D4F); color:#D8F0E4; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(46,125,79,0.4); margin:8px;">Daily Reflection →</a>
+  <a href="journey.html" style="display:inline-block; background:linear-gradient(135deg,#1A1A3A,#3A3A8A); color:#E0E0F5; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(58,58,138,0.4); margin:8px;">My Journey →</a>
+  <a href="index.html" style="display:inline-block; background:linear-gradient(135deg,#2A1A0A,#8A6A2A); color:#F5EDD8; font-family:'Cinzel Decorative',serif; font-size:0.75rem; font-weight:700; letter-spacing:0.25em; padding:16px 36px; border-radius:3px; text-decoration:none; box-shadow:0 4px 24px rgba(138,106,42,0.4); margin:8px;">← Home</a>
+</div>
+
+<footer>
+  γνῶθι σεαυτόν — Know Thyself · A Lifelong Inquiry
+</footer>
+
+<script src="roadmaps.js"></script>
+</body>
+</html>

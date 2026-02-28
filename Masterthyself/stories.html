@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Library — Stories That Shaped Everything</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@200;300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stories.css">
+</head>
+<body>
+<div class="particles" id="particles"></div>
+
+<nav>
+  <a href="index.html" class="nav-back">← Home</a>
+  <span class="nav-logo">✦ The Library</span>
+  <ul class="nav-links">
+    <li><a href="#library">Stories</a></li>
+    <li><a href="#generate">Generate</a></li>
+    <li><a href="#saved">Your Collection</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">Every story ever told began with a single truth</p>
+  <h1 class="hero-title"><span class="word1">The</span><span class="word2">Library</span></h1>
+  <p class="hero-desc">From the burning bush to the fall of Rome. From the faith of Abraham to the courage of Harriet Tubman. From ancient myth to the story you haven't heard yet. Every story is a window into what it means to be human.</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">18+</span><span class="stat-label">Stories</span></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Collections</span></div>
+    <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Generated</span></div>
+  </div>
+  <div class="filter-row">
+    <button class="filter-pill active" data-cat="all" onclick="filterStories('all',this)">All Stories</button>
+    <button class="filter-pill" data-cat="bible" onclick="filterStories('bible',this)">📖 Bible</button>
+    <button class="filter-pill" data-cat="history" onclick="filterStories('history',this)">⚔️ History</button>
+    <button class="filter-pill" data-cat="people" onclick="filterStories('people',this)">🧭 People</button>
+    <button class="filter-pill" data-cat="self" onclick="filterStories('self',this)">🌱 Know Thyself</button>
+    <button class="filter-pill" data-cat="mythology" onclick="filterStories('mythology',this)">🌀 Mythology</button>
+    <button class="filter-pill" data-cat="generated" onclick="filterStories('generated',this)">✨ AI Stories</button>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <input type="text" class="search-input" id="searchInput" placeholder="Search stories, people, themes..." oninput="searchStories(this.value)"/>
+  <span class="search-icon">🔍</span>
+</div>
+
+<section class="library" id="library">
+  <div class="library-grid" id="libraryGrid"></div>
+</section>
+
+<section class="generate-section" id="generate">
+  <div class="generate-inner">
+    <p class="gen-eyebrow">✨ Story Generator</p>
+    <h2 class="gen-title">Your Story, Written Now</h2>
+    <p class="gen-desc">Tell me what kind of story you want. A biblical tale retold in vivid detail. A historical figure brought to life. A parable for something you're going through. Describe it and watch it become.</p>
+    <div class="story-types">
+      <button class="type-btn active" data-type="Bible story retold in vivid modern narrative">📖 Bible Retold</button>
+      <button class="type-btn" data-type="historical fiction bringing a real person to life">⚔️ Historical</button>
+      <button class="type-btn" data-type="a moral parable or wisdom tale">🕊️ Parable</button>
+      <button class="type-btn" data-type="ancient myth or legend told freshly">🌀 Myth</button>
+      <button class="type-btn" data-type="true story of an extraordinary person">🧭 True Story</button>
+      <button class="type-btn" data-type="a short story about self-discovery">🌱 Self-Discovery</button>
+    </div>
+    <div class="gen-prompt-area">
+      <textarea id="genPrompt" rows="3" placeholder="Describe the story you want... e.g. 'Tell me the story of Joseph and his brothers as if it happened today' or 'A parable about someone who keeps waiting for the right moment to start living'"></textarea>
+      <div class="gen-row">
+        <span class="gen-hint">Describe it, then generate</span>
+        <button class="gen-btn" id="genBtn" onclick="generateStory()">✦ Generate Story</button>
+      </div>
+    </div>
+    <div class="gen-output" id="genOutput">
+      <div class="gen-output-title" id="genOutputTitle">—</div>
+      <div class="gen-output-meta">✨ AI Generated · The Library</div>
+      <div class="gen-output-text" id="genOutputText"></div>
+      <button class="gen-save-btn" onclick="saveGeneratedStory()">+ Save to Your Collection</button>
+    </div>
+  </div>
+</section>
+
+<section class="saved-section" id="saved">
+  <div class="saved-inner">
+    <div class="section-header">
+      <h2 class="section-title">Your Collection</h2>
+      <span class="section-sub">Stories you've saved</span>
+    </div>
+    <div id="savedGrid" class="library-grid">
+      <div class="empty-state" id="emptyState">Generate a story and save it — your personal collection will appear here.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-title">✦ The Library — Stories That Shaped Everything</p>
+  <div class="footer-links">
+    <a href="roadmaps.html">Know Thyself</a>
+    <a href="god-page.html">The I AM</a>
+    <a href="history.html">The Human Story</a>
+  </div>
+  <p class="footer-quote">"There is no greater agony than bearing an untold story inside you." — Maya Angelou</p>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-banner" id="modalBanner"></div>
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+      <div class="modal-cat-row">
+        <span class="modal-cat" id="modalCat">—</span>
+        <span class="modal-era" id="modalEra">—</span>
+      </div>
+      <h2 class="modal-title" id="modalTitle">—</h2>
+      <p class="modal-origin" id="modalOrigin">—</p>
+      <div class="modal-story" id="modalStory"></div>
+      <div class="modal-lesson" id="modalLesson">
+        <p class="modal-lesson-label">The Lesson</p>
+        <p class="modal-lesson-text" id="modalLessonText">—</p>
+      </div>
+      <div class="modal-ai-section">
+        <p class="modal-ai-label">Go Deeper</p>
+        <p class="modal-ai-question" id="modalAiQuestion">—</p>
+        <button class="modal-ai-btn" id="modalAiBtn" onclick="deepDive()">✦ Explore This Story</button>
+        <div class="modal-ai-response" id="modalAiResponse"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="stories.js"></script>
+</body>
+</html>
