@@ -1,3 +1,4 @@
+
 :root {
   --gold: #F5C842;
   --gold-light: #FDE98A;
@@ -944,4 +945,58 @@ footer {
   .timeline::before { left: 28px; }
   .timeline-item { grid-template-columns: 56px 1fr; gap: 0 16px; }
   .timeline-dot { width: 36px; height: 36px; font-size: 1rem; }
+}
+
+/* ═══════════════════════════════════════
+   MOBILE READABILITY FIX — KNOW EVERYTHING
+   Boosts font sizes + lifts dim opacities on <= 768px
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .nav-brand, .nav-cta, .nav-back, .back-link { font-size: 0.72rem !important; opacity: 0.8 !important; letter-spacing: 0.2em !important; }
+  .hero-over, .hero-sub, .hero-tag { font-size: 0.72rem !important; letter-spacing: 0.25em !important; opacity: 0.85 !important; }
+  .hero-desc { font-size: 1.1rem !important; opacity: 0.75 !important; }
+  .portals-label, .daily-eyebrow, .tracker-eyebrow { font-size: 0.72rem !important; opacity: 0.8 !important; }
+  .pc-num, .pc-enter { font-size: 0.68rem !important; opacity: 0.65 !important; }
+  .pc-topic, .pc-tag { font-size: 0.65rem !important; opacity: 0.7 !important; }
+  .pc-desc { font-size: 1rem !important; opacity: 0.72 !important; }
+  .ref-card-type, .ref-card-source { font-size: 0.7rem !important; opacity: 0.72 !important; }
+  .ref-card-content { font-size: 1.05rem !important; opacity: 0.88 !important; }
+  .ref-card-question { font-size: 1.05rem !important; }
+  .daily-sub, .daily-date { font-size: 0.72rem !important; opacity: 0.72 !important; }
+  .refresh-btn { font-size: 0.72rem !important; }
+  .pillar-name { font-size: 0.82rem !important; }
+  .pillar-pct { font-size: 0.72rem !important; }
+  .check-label { font-size: 0.7rem !important; color: rgba(240,234,214,0.72) !important; }
+  .pillar-check.done .check-label { color: rgba(240,234,214,0.38) !important; }
+  .notes-label, .books-label { font-size: 0.7rem !important; opacity: 0.8 !important; }
+  .notes-textarea { font-size: 1rem !important; color: rgba(240,234,214,0.82) !important; }
+  .notes-textarea::placeholder { color: rgba(240,234,214,0.42) !important; }
+  .book-entry-text { font-size: 0.95rem !important; color: rgba(240,234,214,0.82) !important; }
+  .book-input { font-size: 0.92rem !important; }
+  .book-add-btn, .action-btn { font-size: 0.7rem !important; }
+  .tracker-save-hint { font-size: 0.68rem !important; opacity: 0.65 !important; }
+  .footer-brand { font-size: 0.72rem !important; opacity: 0.5 !important; }
+  .footer-links a { font-size: 0.7rem !important; opacity: 0.72 !important; }
+  .footer-quote { font-size: 0.9rem !important; opacity: 0.42 !important; }
+  .era-badge, .category-badge { font-size: 0.68rem !important; opacity: 0.8 !important; }
+  .cmsg-bubble { font-size: 0.92rem !important; line-height: 1.75 !important; }
+  .portal-label { font-size: 0.7rem !important; letter-spacing: 0.12em !important; }
+  /* roadmaps page */
+  .roadmap-tag, .phase-label, .level-badge { font-size: 0.68rem !important; opacity: 0.72 !important; }
+  .roadmap-desc, .phase-desc, .book-desc { font-size: 0.92rem !important; opacity: 0.75 !important; }
+  /* stories page */
+  .story-category, .story-era, .story-source { font-size: 0.68rem !important; opacity: 0.72 !important; }
+  .story-excerpt { font-size: 0.95rem !important; opacity: 0.78 !important; }
+  .story-footer-text { font-size: 0.68rem !important; opacity: 0.65 !important; }
+  /* god page */
+  .attr-label, .name-label, .promise-tag { font-size: 0.68rem !important; opacity: 0.72 !important; }
+  /* history page */
+  .event-date, .era-span, .event-impact { font-size: 0.68rem !important; opacity: 0.72 !important; }
+  .event-body, .era-intro { font-size: 0.92rem !important; opacity: 0.75 !important; }
+}
+@media (max-width: 400px) {
+  .hero-title { font-size: 2.4rem !important; }
+  .pc-title { font-size: 1.2rem !important; }
+  .daily-title, .tracker-title { font-size: 1.5rem !important; }
 }
